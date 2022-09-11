@@ -129,6 +129,10 @@ function displayMenuBtns() {
     })
     .join("");
   btnContainer.innerHTML = categoryBtns;
+
+  const all = document.querySelector(".filter-btn");
+  all.classList.add("filter-btn-selected");
+
   const filterBtns = document.querySelectorAll(".filter-btn");
   // console.log(filterBtns);
   filterBtns.forEach(function (btn) {
